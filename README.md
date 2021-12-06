@@ -1,6 +1,6 @@
 # SPC
 
-A tweakable block cipher with 256-bit key and 128-bit block, using the
+A tweakable block cipher with 128-bit key and block, using the
 Lai-Massey structure, like
 [FOX64](https://crypto.junod.info/sac04a_talk.pdf) but over 64-bit words
 instead of 32-bit.
@@ -29,7 +29,7 @@ The last encryption round also does `σ`.
 
 `H` is the hash function SHA4, which takes as input:
 
-* The 256-bit key
+* The 128-bit key
 * The 8-bit round counter
 * The 64-bit `L⊕R`
 * The 56-bit tweak

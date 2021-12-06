@@ -6,10 +6,10 @@
 int main()
 {
 
-    uint8_t k[32], p[16], c[16], b[16], t[8];
+    uint8_t k[16], p[16], c[16], b[16], t[8];
     int fail = 0;
 
-    memset(k, 0, 32);
+    memset(k, 0, 16);
     memset(p, 0, 16);
     memset(b, 0, 16);
     memset(t, 0, 8);
