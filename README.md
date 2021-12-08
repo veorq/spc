@@ -57,6 +57,3 @@ operations).
 No security claim in the related-key, known-key, chosen-key
 models, or against "algorithm faults".
 
-## Cryptanalysis
-
-* Possible 2<sup>64</sup> [distinguisher](https://twitter.com/CryptoOrrDun/status/1467897556894208006)
