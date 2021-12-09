@@ -51,9 +51,17 @@ SPC's hash does 3 SipHash rounds, for which [distinguishers
 exist](https://eprint.iacr.org/2021/189).  But 4 Lai-Massey rounds
 involves 12 SipHash rounds, which is expected to prevent any attack on
 the full cipher *when the key is secret* (key recovery, plaintext
-recovery, distinguishers, with significantly less than 2<sup>128</sup>
+recovery, ~~distinguishers~~, with significantly less than 2<sup>128</sup>
 operations).
 
 No security claim in the related-key, known-key, chosen-key
 models, or against "algorithm faults".
+
+## Cryptanalysis
+
+* 2<sup>n/4</sup> distinguisher on 4-round Lai-Massey with
+  chosen-plaintext and chosen-ciphertext queries, matching the
+  [theoretical bound](https://eprint.iacr.org/2009/266). Yields a
+  2<sup>32</sup> queries and computation distinguisher for 4-round SPC,
+  not exploitable for key or plaintext recovery.
 
