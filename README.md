@@ -60,8 +60,10 @@ models, or against "algorithm faults".
 ## Cryptanalysis
 
 * 2<sup>n/4</sup> distinguisher on 4-round Lai-Massey with
-  chosen-plaintext and chosen-ciphertext queries, matching the
-  [theoretical bound](https://eprint.iacr.org/2009/266). Yields a
-  2<sup>32</sup> queries and computation distinguisher for 4-round SPC,
-  not exploitable for key or plaintext recovery.
+  chosen-plaintext queries, matching the [theoretical
+  bound](https://eprint.iacr.org/2009/266). Yields a 2<sup>32</sup>
+  queries and computation distinguisher for 4-round SPC, not exploitable
+  for key or plaintext recovery.
+
+* 2<sup>64</sup> boomerang distinguisher.
 
