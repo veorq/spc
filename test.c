@@ -9,10 +9,10 @@ int main()
     uint8_t k[16], p[16], c[16], b[16], t[8];
     int fail = 0;
 
-    memset(k, 0, 16);
-    memset(p, 0, 16);
-    memset(b, 0, 16);
-    memset(t, 0, 8);
+    memset(k, 1, 16);
+    memset(p, 2, 16);
+    memset(b, 2, 16);
+    memset(t, 4, 8);
 
     for (int i = 0; i < 8; ++i) {
 

@@ -36,7 +36,7 @@ The last encryption round also does `σ`.
 
 SHA4 is based on a variant of SipHash, where:
 
-* `v0 = 0x50726f736563636f`
+* `v0 = 0xA1726f736563636f`
 * `v1 = 0x43686f636f6c6174`
 * `v2 = 0x01f32d1f4361f48e`
 * `v3 = counter || tweak`
